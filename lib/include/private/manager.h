@@ -138,19 +138,19 @@ public:
     if (it->second.user_side_ressource.empty())
       {
 	if (typ == SF_RENDERTEXTURE)
-	  delete (sf::RenderTexture*)it->second.real_ressource;
+	  {} // delete (sf::RenderTexture*)it->second.real_ressource;
 	else if (typ == SF_TEXTURE)
-	  delete (sf::Texture*)it->second.real_ressource;
+	  {} // delete (sf::Texture*)it->second.real_ressource;
 	else if (typ == SF_IMAGE)
-	  delete (sf::Image*)it->second.real_ressource;
+	  {} //delete (sf::Image*)it->second.real_ressource;
 	else if (typ == SF_FONT)
-	  delete (sf::Font*)it->second.real_ressource;
+	  {} //delete (sf::Font*)it->second.real_ressource;
 	else if (typ == SF_SOUNDBUFFER)
-	  delete (sf::SoundBuffer*)it->second.real_ressource;
+	  {} // delete (sf::SoundBuffer*)it->second.real_ressource;
 	else if (typ == BUNNY_PIXELS)
 	  bunny_free(it->second.real_ressource);
 	else if (typ == BUNNY_PICTURE)
-	  bunny_delete_clipable((t_bunny_clipable*)it->second.real_ressource);
+	  {} // bunny_delete_clipable((t_bunny_clipable*)it->second.real_ressource);
 	else if (typ == BUNNY_SAMPLE)
 	  bunny_free(it->second.real_ressource);
 	else if (typ == LOADED_FILE)

@@ -1,3 +1,5 @@
 *.o
 *.a
 lib/errors/*.cpp
+fetchconf
+mergeconf
